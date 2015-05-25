@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jquery Sample</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile.js"></script>
+</head>
+<body>	
+	<div data-role="page" id="main">
+		<div data-role="header" data-position="fixed">
+			<a href="" data-icon="home">Home</a>
+			<h1>Warung Makan KAMPOENGAN</h1>
+			<a href="#secondPage" data-icon="info">About</a>
+		</div>
+		<div data-role="content">
+			<ul data-role="listview" data-filter="true" data-inset= "true">
+				<li style="padding:2pt">
+					<a href="#satu"> 
+						<img src="img/1.jpg"/>
+						<h4>Menu Minggu ini</h4>
+						<p>Informasi Tentang Menu baru terlaris di minggu ini</p>
+						<span class="ui-li-count">1</span>
+					</a>
+				</li>
+				
+				<li style="padding:2pt">
+					<a href=""> 
+						<img src="img/2.jpg"/>
+						<h4>Menu Baru Bulan ini</h4>
+						<p>informasi menu makanan terbaru bulan ini</p>
+						<span class="ui-li-count">2</span>
+					</a>
+				</li>
+				
+				<li style="padding:2pt">
+					<a href=""> 
+						<img src="img/3.jpg"/>
+						<h4>Keseluruhan Menu</h4>
+						<p>Informasi menu makanan yang tersedia di resto ini</p>
+						<span class="ui-li-count">0</span>
+					</a>
+				</li>
+				
+				<li style="padding:2pt">
+					<a href=""> 
+						<img src="img/4.jpg"/>
+						<h4>Pemesanan makanan </h4>
+						<p>Informasi cara mengorder makanan dengan menggunakan reservasi</p>
+						<span class="ui-li-count">8</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed">   
+			<h4>FTI &copy; 2015</h4>
+		</div>
+	</div>
+	
+	<div data-role="page" id="secondPage" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			 <a href="#" data-rel="back">Back</a>
+			<h1>About</h1>
+		</div>
+		<div data-role="content">
+			<p>
+				Restaurant ini berdiri di tahun 2015 di sebuah kota kecil yang sedang berkembang ini 
+			</p>			
+		</div>
+		<div data-role="page" id="satu" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			 <a href="#" data-rel="back">Back</a>
+			<h1>About</h1>
+		</div>
+		<div data-role="content">
+			<img src="img/1.jpg"/>
+						<h4>Menu Minggu ini</h4>
+						<p>Informasi Tentang Menu baru terlaris di minggu ini</p>			
+		</div>
+		<div data-role="footer" data-position="fixed">   
+			<div data-role="navbar" data-iconpos="top">
+				<ul>
+					<li><a href="#main" data-icon="home" class="ui-btn-active">One</a></li>
+					<li><a href="#" data-icon="gear">Two</a></li>
+					<li><a href="#" data-icon="info">Three</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
